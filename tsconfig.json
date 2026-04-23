@@ -18,6 +18,7 @@
     "noUnusedLocals": false,
       "allowSyntheticDefaultImports": true,
     //"noImplicitAny": true,
+    //set PATH=C:\Program Files\nodejs;%PATH%
 
     "types": ["node", "react"],
     "typeRoots": ["node_modules/@types"],
