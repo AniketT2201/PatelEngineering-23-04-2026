@@ -1,0 +1,192 @@
+/* ===== Safety Red Palette ===== */
+:root {
+  --sr-red-soft: #fde8e8;
+  --sr-red-main: #f87171;
+  --sr-red-dark: #eb2023;
+  --sr-text-dark: #1f2937;
+  --sr-white: #ffffff;
+}
+
+/* ===== Root Layout ===== */
+.sr-layout-root {
+  display: flex;
+  height: 100vh;
+  background: var(--sr-white);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.sr-sidebar {
+  width: 260px;
+  background: var(--sr-white);
+  border-right: 1px solid #f5c2c2;
+  padding: 22px 18px;
+}
+
+.sr-brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--sr-red-dark);
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: solid 2px;
+}
+
+/* ===== Header ===== */
+.sr-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f3caca;
+}
+
+.sr-menu-toggle-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--sr-red-dark);
+}
+
+/* ===== Mobile Sidebar ===== */
+@media (max-width: 768px) {
+  .sr-sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    height: 100vh;
+    z-index: 1300;
+    transition: left 0.3s ease;
+  }
+
+  .sr-sidebar-open {
+    left: 0;
+  }
+
+  .sr-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1200;
+  }
+}
+.sr-collapse-btn {
+  background: var(--sr-red-soft);
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.sr-sidebar-collapsed {
+  width: 72px;
+}
+
+.sr-sidebar-collapsed .sr-menu-item span,
+.sr-sidebar-collapsed .sr-submenu-list {
+  display: none;
+}
+
+
+/* ===== Menu ===== */
+.sr-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sr-menu-item-wrapper {
+  margin-bottom: 6px;
+}
+
+.sr-menu-item {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--sr-text-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sr-menu-item:hover {
+  background: var(--sr-red-soft);
+  color: var(--sr-red-dark);
+}
+
+.sr-toggle-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===== Submenu ===== */
+.sr-submenu-list {
+  list-style: none;
+  padding: 6px 0 6px 14px;
+}
+
+.sr-submenu-item {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sr-submenu-item:hover {
+  background: var(--sr-red-main);
+  color: #fff;
+}
+
+/* ===== Dashboard ===== */
+.sr-dashboard {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/Safety\ Portal\ Images/banner11.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem
+}
+
+.sr-dashboard-card {
+  // background-image: url("../../../assets/Safety\ Portal\ Images/banner11.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // background: var(--sr-white);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sr-dashboard-image {
+  width: 100%;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sr-dashboard-title {
+  color: var(--sr-red-dark);
+  margin-bottom: 12px;
+}
+
+.sr-dashboard-text {
+  color: #555;
+  line-height: 1.7;
+}

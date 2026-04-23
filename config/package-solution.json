@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "patel-engg-landing-project-side-solution",
+    "id": "8422c585-8707-478c-b72c-69e801f3d8f8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "features": [
+      {
+        "title": "patel-engg-hub-landing Feature",
+        "description": "The feature that activates elements of the patel-engg-hub-landing solution.",
+        "id": "2ca06b4b-fa15-4cf1-b4b0-2319fb54f7a5",
+        "version": "1.0.0.0"
+      }
+    ]
+  }, 
+  "paths": {
+    "zippedPackage": "solution/patel-engg-landing-projectsite.sppkg"
+  }
+}

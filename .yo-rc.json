@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "patel-engg-hub-landing",
+    "libraryId": "8422c585-8707-478c-b72c-69e801f3d8f8",
+    "environment": "spo",   
+    "packageManager": "npm",
+    "solutionName": "PatelEnggHubLanding",
+    "solutionShortDescription": "PatelEnggHubLanding description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+} 
+                                                                            

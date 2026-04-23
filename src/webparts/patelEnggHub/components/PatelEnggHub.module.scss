@@ -1,0 +1,15 @@
+.header{
+  background-color: #ee1c20;
+}
+section,
+.ms-HubNav {
+  background: none !important;
+}
+.menubar1 .dropdown {
+  display: none;
+  position: absolute;
+}
+
+.menubar1 .navhover:hover .dropdown {
+  display: block;
+}

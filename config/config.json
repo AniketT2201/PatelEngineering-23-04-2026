@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "patel-engg-hub-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/patelEnggHub/PatelEnggHubWebPart.js",
+          "manifest": "./src/webparts/patelEnggHub/PatelEnggHubWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PatelEnggHubWebPartStrings": "lib/webparts/patelEnggHub/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
